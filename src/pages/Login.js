@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { addEmail } from '../redux/actions';
 import pig3d from '../img/pig-3d.png';
+import oinc from '../audio/oink.mp3';
 
 class Login extends React.Component {
   state = {
@@ -50,6 +51,10 @@ class Login extends React.Component {
     return !(isLoginValid && isSenhaValid);
   };
 
+  sayOinc = () => {
+    new Audio(oinc).play();
+  }
+
   render() {
     const { email } = this.state;
     const { dispatch } = this.props;
@@ -85,7 +90,7 @@ class Login extends React.Component {
             </button>
           </Link>
         </div>
-        <img className="login__pig" src={ pig3d } alt="edit-icon" />
+        <img className="login__pig" src={ pig3d } alt="edit-icon" onClick={ this.sayOinc }/>
       </div>
     );
   }
