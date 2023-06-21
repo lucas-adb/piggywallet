@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { deleteExpense, openEditMode } from '../redux/actions';
 import editIcon from '../img/edit.svg';
-// import deleteIcon from '../img/delete.svg';
+import deleteIcon from '../img/delete.svg';
 
 class Table extends Component {
   convertValue = (value, ask) => {
@@ -73,7 +73,6 @@ class Table extends Component {
                   data-testid="edit-btn"
                   onClick={ (event) => this.handleEdit(event) }
                 >
-                  {/* Editar */}
                   <img className="table__icons" src={ editIcon } alt="edit-icon" />
                 </button>
                 <button
@@ -81,10 +80,7 @@ class Table extends Component {
                   data-testid="delete-btn"
                   onClick={ (event) => this.handleDelete(event) }
                 >
-                  {/* Excluir */}
-                  {/* o icone abaixo quebra o teste do cypress */}
-                  {/* <img className="table__icons" src={ deleteIcon } alt="delete-icon" /> */}
-                  ✕
+                  <img className="table__icons" src={ deleteIcon } alt="delete-icon" />
                 </button>
               </td>
             </tr>
