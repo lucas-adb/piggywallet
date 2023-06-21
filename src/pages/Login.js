@@ -57,7 +57,7 @@ class Login extends React.Component {
     return (
       <div className="login__wrapper__all">
         <div className="login__wrapper">
-          <h1 className="login__h1">🐷 TrybeWallet</h1>
+          <h1 className="login__h1"><span className='pig__span'>🐷</span> PiggyWallet</h1>
           <input
             className="login__input"
             type="email"

@@ -49,7 +49,7 @@ class Header extends Component {
 
     return (
       <div className="header_wrapper">
-        <h1 className="header_h1">🐷 TrybeWallet</h1>
+        <h1 className="header_h1"><span className='pig__span'>🐷</span> PiggyWallet</h1>
         <p className="header__p__total">
           Total de despesas:
           {' '}

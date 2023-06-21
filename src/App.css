@@ -42,6 +42,7 @@ body , input , button {
 .login__h1 {
   font-family: Lora, serif;
   margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .login__input {
@@ -117,6 +118,11 @@ body , input , button {
 .header_h1 {
   font-family: Lora, serif;
   margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.pig__span {
+  font-style: normal;
 }
 
 .header__p__total {
