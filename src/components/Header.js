@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class Header extends Component {
   state = {
@@ -49,7 +50,9 @@ class Header extends Component {
 
     return (
       <div className="header_wrapper">
+        <Link to='/'>
         <h1 className="header_h1"><span className='pig__span'>🐷</span> PiggyWallet</h1>
+        </Link>
         <p className="header__p__total">
           Total de despesas:
           {' '}
