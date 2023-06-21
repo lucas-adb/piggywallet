@@ -152,12 +152,12 @@ body , input , button {
   align-items: center;
   background-color: #fccfea;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   gap: 1rem;
-  height: 33rem;
+  /* height: 33rem; */
   justify-content: center;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 9rem;
   width: 100vw;
 }
 
@@ -191,6 +191,7 @@ body , input , button {
   font-weight: 700;
   height: 2.5rem;
   width: 30rem;
+  align-self: flex-end;
 }
 
 .addExpense__button:disabled {
@@ -264,13 +265,14 @@ th , td {
   background-color: #241f21;
   color: white;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   gap: 1rem;
-  height: 33rem;
+  /* height: 33rem; */
   justify-content: center;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 2rem;
   width: 100vw;
+  /* max-width: 112rem; */
 
   /* background-color: #b4dbf7; */
 
@@ -307,6 +309,7 @@ th , td {
   font-weight: 700;
   height: 2.5rem;
   width: 30rem;
+  align-self: flex-end;
 
   /* background-color: #fccfea;
   border: 1px solid #fccfea; */
