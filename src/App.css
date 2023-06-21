@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap') ;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body , input , button {
+  font-family: Space Grotesk, sans-serif;
+}
+
+.login__wrapper__all {
+  align-items: center;
+  background: linear-gradient(90deg, #fffafc 0%, #fccfea 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.login__wrapper {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  height: 22rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 32rem;
+
+  /* margin: 5rem auto; */
+}
+
+.login__h1 {
+  font-family: Lora, serif;
+  margin-bottom: 1rem;
+}
+
+.login__input {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 21rem;
+}
+
+.login__input::placeholder {
+  color: gray;
+}
+
+.login__button {
+  background-color: #fccfea;
+  border: 1px solid #fccfea;
+  border-radius: 0.3rem;
+  color: black;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 21rem;
+}
+
+.login__button:disabled {
+  background-color: #bababa;
+  border: 1px solid #bababa;
+  border-radius: 0.3rem;
+  color: black;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 21rem;
+}
+
+.login__pig {
+  animation: floater 5s infinite;
+  bottom: 10%;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translateY(-10%);
+  transition: ease 0.5s;
+  width: 32rem;
+  z-index: 1;
+}
+
+@keyframes floater {
+
+  0% {
+    transform: translateY(-10%);
+    transition: ease 1s;
+  }
+
+  50% {
+    transform: translateY(10%);
+    transition: ease 1s;
+  }
+}
+
+/* header */
+.header_wrapper {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  gap: 0.3rem;
+  height: 9rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100vw;
+}
+
+.header_h1 {
+  font-family: Lora, serif;
+  margin-bottom: 1rem;
+}
+
+.header__p__total {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.header__p__total:hover {
+  text-decoration: underline black wavy;
+  text-decoration-thickness: 0.1rem;
+  text-underline-position: under;
+}
+
+.header__total__number {
+  font-weight: 700;
+}
+
+.header__email {
+  background-color: #fccfea;
+  border: 1px solid #fccfea;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
+
+/* addExpense */
+.addExpense_Form {
+  align-items: center;
+  background-color: #fccfea;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  height: 33rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100vw;
+}
+
+.addExpense_input {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  color: black;
+  display: block;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+.addExpense_select {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  color: black;
+  display: block;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+.addExpense__button {
+  background-color: #5c8eff;
+  border: 1px solid #5c8eff;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 30rem;
+}
+
+.addExpense__button:disabled {
+  background-color: #bababa;
+  border: 1px solid #bababa;
+  border-radius: 0.3rem;
+  color: black;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 30rem;
+}
+
+.walletForm__wrapper {
+  background-color: #5c8eff;
+  height: 100vh;
+}
+
+/* tabela */
+table {
+  border: 1px solid black;
+  border-bottom: none;
+  border-collapse: separate;
+  border-radius: 0.5rem;
+  border-spacing: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  overflow: hidden;
+  text-align: center;
+  width: 72%;
+}
+
+th {
+  background-color: #fccfea;
+  color: black;
+}
+
+td {
+  background-color: white;
+  color: black;
+}
+
+th , td {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+
+.table__icons {
+  height: 1.5rem;
+  margin-right: 0.2rem;
+}
+
+.table__icons:hover {
+  height: 1.5rem;
+  margin-right: 0.2rem;
+}
+
+.deleteEdit__button {
+  background-color: white;
+  border: 1px solid white;
+  color: #5c8eff;
+  font-size: 21px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* EditExpense */
+.EditExpense_Form {
+  align-items: center;
+  background-color: #241f21;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  height: 33rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100vw;
+
+  /* background-color: #b4dbf7; */
+
+  /* background-color: #fffafc; */
+}
+
+.editExpense_input {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  color: black;
+  display: block;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+.editExpense_select {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  color: black;
+  display: block;
+  height: 2.5rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+.editExpense__button {
+  background-color: #fccfea;
+  border: 1px solid #fccfea;
+  border-radius: 0.3rem;
+  color: black;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 30rem;
+
+  /* background-color: #fccfea;
+  border: 1px solid #fccfea; */
+}
+
+.editExpense__button:disabled {
+  background-color: #bababa;
+  border: 1px solid #bababa;
+  border-radius: 0.3rem;
+  color: black;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 30rem;
+}
