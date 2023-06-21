@@ -68,7 +68,7 @@ class Login extends React.Component {
           />
           <input
             className="login__input"
-            type="text"
+            type="password"
             data-testid="password-input"
             placeholder="Senha"
             minLength={ 6 }
